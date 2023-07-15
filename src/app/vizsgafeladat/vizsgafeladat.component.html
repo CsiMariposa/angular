@@ -1,0 +1,20 @@
+<p>vizsgafeladat works!</p>
+
+
+<label for="magassag" class="">ADja meg a magasságot: </label>
+<input type="number" id="magassag" [(ngModel)]="magassag"><br>
+
+<label for="testsuly" class="">Adja meg a testsúlyt: </label>
+<input type="number" id="testsuly" [(ngModel)]="testsuly"><br>
+
+<p>A testtömegindex:{{testsuly/(magassag*magassag)}}</p>
+<button type="button" class="btn btn-success" (click)="korabbiEredmenyek2()">Eredmeny Mentése </button>
+<p>{{eredmeny}}</p>
+
+
+<h3>Korábbi eredmények(LOG):</h3>
+<ul>
+    <li *ngFor="let log of korabbiEredmenyek2">
+        {{log}}
+    </li>
+</ul>
