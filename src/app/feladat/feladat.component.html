@@ -1,0 +1,14 @@
+<p>feladat works!</p>
+<h1>Angular modul megoldása</h1>
+<div class="form-group">
+    <label for="primSzam">Adj meg számot: </label>
+    <input type="number" class="form-control" id="primSzam" [(ngModel)]="primSzam"> //beviteli mező 1. 
+    <div>
+<button type="button" class="btn btn-success form-control" (click)="EredmenyMentes()">Eredmény mentése</button>
+
+
+<ul>
+    <li *ngFor="let eredmeny of eredmenyek">
+        {{eredmeny}}
+    </li> 
+</ul>
